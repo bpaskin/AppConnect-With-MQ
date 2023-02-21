@@ -1,0 +1,2 @@
+BrokerRegistry:
+  mqKeyRepository: '/home/aceuser/initial-config/keystore/key'
