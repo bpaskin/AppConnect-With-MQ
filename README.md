@@ -7,6 +7,8 @@ This is a simple application that GETs messages from an MQ Queue and PUTs to ano
 
 The `ARG` values for the MQ Client and MQ information needs to be updated for the specific environment.
 
+The `trust.cer` needs to be the trusted certificate for the targeted MQ QMGR
+
 #### BUILD:
 ```
 docker build -t ace -f Dockerfile .
