@@ -3,6 +3,11 @@
 This is a simple application that GETs messages from an MQ Queue and PUTs to another MQ Queue on the same host.  The connection is secured with SSL, and overrides are in the `Dockerfile`
 
 #### REQUIRED:
+The image is pulled from IBM Container Registry, which requires an [entitlement key](https://myibm.ibm.com/products-services/containerlibrary).  Logon to ICR before building the image.
+```
+docker login cp.icr.io -u cp -p ENTITLEMENT_KEY
+```
+
 [The MQ Client for Linux](https://ibm.biz/mq93clients) must be downloaded and kept in the same directory as the Dockerfile.  
 
 The `ARG` values for the MQ Client and MQ information needs to be updated for the specific environment.
